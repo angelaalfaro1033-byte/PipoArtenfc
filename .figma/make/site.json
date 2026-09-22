@@ -1,0 +1,10 @@
+{
+  "description": "Discover handcrafted flowers and planters, each made with care and holding a little mystery to discover.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

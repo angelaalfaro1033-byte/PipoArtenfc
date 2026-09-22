@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-pipo-pink: #FF7BA7;
+  --color-pipo-peach: #FFC39E;
+  --color-pipo-cream: #FFF8F5;
+  --color-pipo-dark: #2E1A1A;
+  --font-family-sans: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFF8F5;
+  color: #2E1A1A;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(-2deg); }
+  50% { transform: translateY(-14px) rotate(2deg); }
+}
+
+@keyframes isotipoWink {
+  0%, 85%, 100% { transform: scaleY(1); }
+  90%, 95% { transform: scaleY(0.1); }
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.18); }
+}
+
+.animate-float { animation: float 3.5s ease-in-out infinite; }
+.animate-float-slow { animation: floatSlow 5s ease-in-out infinite; }
+.animate-heartbeat { animation: heartbeat 1.8s ease-in-out infinite; }
